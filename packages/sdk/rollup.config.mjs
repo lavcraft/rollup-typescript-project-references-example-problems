@@ -22,12 +22,12 @@ const config = {
         format: 'esm'
     },
     plugins: [
+        nodeResolve(),
         typescript2({
             // build: true,
             // useTsconfigDeclarationDir: true,
             declarationDir: './types',
         }),
-        nodeResolve(),
         commonjs(),
     ],
     external: [
