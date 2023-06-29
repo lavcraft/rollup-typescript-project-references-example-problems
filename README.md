@@ -2,9 +2,9 @@
 
 Rollup Typescript2 example for reproduce problem with typescript project references
 
-**Why rollup-typescript2?** — because @rollup/plugin-typescript doesn't support typescript project references
-**Why you need SDK project** —  in this example, sdk - externalized project. But it also dogfooded from local project `frontend`
-**Why you need shared project** — because it shared with `backend`, `frontend`, and sdk. It shared project with some models and internals. Optimize `backend` compilation speed and avoid direct sdk usage in `backend`
+**Why rollup-typescript2?** — because @rollup/plugin-typescript doesn't support typescript project references \
+**Why you need SDK project** —  in this example, sdk - externalized project. But it also dogfooded from local project `frontend` \
+**Why you need shared project** — because it shared with `backend`, `frontend`, and sdk. It shared project with some models and internals. Optimize `backend` compilation speed and avoid direct sdk usage in `backend` \
 
 
 [//]: # (## Problem 2 — different behaviour with tsc and rollup)
