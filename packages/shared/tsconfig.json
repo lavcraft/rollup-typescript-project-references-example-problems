@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "incremental": true,
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": false,
+    "declarationMap": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "composite": true,
+    "declaration": true
+  },
+  "exclude": [
+    "./build",
+    "**/*.test.ts"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts"
+  ],
+}

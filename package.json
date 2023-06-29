@@ -1,0 +1,12 @@
+{
+  "name": "rollup-typescript-reference-types-problem",
+  "workspaces": [
+    "packages/shared",
+    "packages/sdk",
+    "packages/backend",
+    "packages/frontend"
+  ],
+  "devDependencies": {
+    "typescript": "^5.1.5"
+  }
+}

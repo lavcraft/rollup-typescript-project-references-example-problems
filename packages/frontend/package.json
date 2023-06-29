@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^5.1.5"
+  },
+  "dependencies": {
+    "@project/sdk": "*"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "author": "",
+  "license": "ISC"
+}

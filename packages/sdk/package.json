@@ -1,0 +1,38 @@
+{
+  "name": "@project/sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": false,
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "typescript": "^5.1.5"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "rollup": "rollup -c rollup.config.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    "./actions/*": {
+      "require": "./build/actions/*.js",
+      "import": "./build/actions/*.js"
+    },
+    "./models/*": {
+      "require": "./build/models/*.js",
+      "import": "./build/models/*.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "build/*",
+        "build/*/index.d.ts"
+      ]
+    }
+  }
+}
