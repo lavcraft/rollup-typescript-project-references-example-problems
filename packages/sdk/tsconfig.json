@@ -28,7 +28,7 @@
     "declaration": true,
     "paths": {
       "@shared/*": [
-        "../../shared/src/*"
+        "../../shared/build/*"
       ]
     }
   },

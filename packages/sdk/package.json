@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "tsc -b tsconfig.json",
-    "rollup": "rollup -c rollup.config.mjs"
+    "rollup": "rollup -c rollup.config.mjs",
+    "clean": "rm -rf build/ *.tsbuildinfo"
   },
   "author": "",
   "license": "ISC",
