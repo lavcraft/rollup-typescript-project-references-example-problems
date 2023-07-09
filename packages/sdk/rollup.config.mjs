@@ -23,16 +23,17 @@ const config = {
     plugins: [
         nodeResolve(),
         typescript2({
-            // build: true,
             // useTsconfigDeclarationDir: true,
-            // declarationDir: './types',
+            // debugging options
+            verbosity: 3,
+            clean: true,
         }),
         // commonjs(),
     ],
     external: [
+        /@shared/,
         'undici',
         'querystring',
-
         'mobx',
         'mobx-react-lite',
         'mobx-utils',
